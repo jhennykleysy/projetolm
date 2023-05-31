@@ -1,0 +1,272 @@
+@import url("https://fonts.googleapis.com/css?family=Varela+Round");
+@font-face {
+  font-family: "FontAwesome";
+  src: url("../fonts/fontawesome-webfont.eot?v=4.7.0");
+  src: url("../fonts/fontawesome-webfont.eot?#iefix&v=4.7.0")
+      format("embedded-opentype"),
+    url("../fonts/fontawesome-webfont.woff2?v=4.7.0") format("woff2"),
+    url("../fonts/fontawesome-webfont.woff?v=4.7.0") format("woff"),
+    url("../fonts/fontawesome-webfont.ttf?v=4.7.0") format("truetype"),
+    url("../fonts/fontawesome-webfont.svg?v=4.7.0#fontawesomeregular")
+      format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+body,
+html {
+  background: #ffffff;
+  font-family: "Varela Round", sans-serif;
+}
+
+.logo {
+  height: 3.5em;
+  border-radius: 50%;
+}
+
+.nav_list {
+  text-decoration: none;
+  gap: 2.5em;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  /* flex-wrap: wrap; */
+  text-transform: uppercase;
+}
+
+.menu {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 30px;
+}
+
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-image: linear-gradient(rgb(231, 111, 131), transparent);
+}
+
+ul {
+  list-style-type: none;
+}
+
+.nav_list a {
+  text-decoration: none;
+  font-style: normal;
+  color: rgb(243, 241, 241);
+}
+
+.nav_list a:hover {
+  font-style: bold;
+  transform: scale(1.2);
+  color: rgb(241, 0, 241);
+}
+.qm_somos {
+  min-width: max-content;
+}
+
+@media (max-width: 800px) {
+  .nav_list {
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    gap: 0.7em;
+    font-size: 0.7em;
+    transition: font-size 0.3s;
+  }
+  header {
+    opacity: 0.6;
+    transition: all 5s;
+  }
+  header:hover {
+    transition: all 0.5s;
+    opacity: 1;
+  }
+}
+
+/* *********************************************** */
+
+main {
+  background-color: rgb(228, 209, 212);
+}
+
+.container {
+  display: flex;
+  padding: 100px 15%;
+  color: #333;
+  display: flex;
+  flex-flow: wrap;
+  justify-content: center;
+  text-align: center;
+}
+.apresentacao {
+  display: flex;
+  flex-direction: column;
+  background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(199, 138, 138, 0.5)),
+    url(../image/imag3.jpg);
+
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
+  height: 90vh;
+  min-height: 400px;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  gap: 30px;
+}
+
+.apresentacao h2 {
+  color: rgb(228, 128, 144);
+  text-shadow: 1px 1.5px black;
+  margin-top: 1.85em;
+}
+
+.apresentacao h1 {
+  font-size: 50px;
+  color: rgb(255, 255, 255);
+  text-shadow: 2px 2px black;
+}
+
+.apresentacao p {
+  text-shadow: 1.5px 1px rgb(0, 0, 0);
+  color: pink;
+}
+
+.apresentacao a {
+  text-decoration: none;
+  color: #fff;
+  /* background-color: rgb(208, 171, 243); */
+  border-radius: 30%;
+  padding: 10px 20px;
+  font-size: 20px;
+  text-align: center;
+}
+
+.apresentacao a:hover {
+  transform: scale(1.3);
+}
+
+/* main2************************************************** */
+/* .servicos_space > servicos > .servicos_text >servico1-2-3 */
+/* .servicos_space {
+  background-color: aqua;
+  font-weight: 500;
+  height: 50vh;
+  display: flex;
+} */
+
+main .servicos_text {
+  padding: 2em;
+  text-align: center;
+  border: 1px solid black;
+  background-color: pink;
+  font-weight: 100;
+}
+.servicos {
+  display: flex;
+
+  padding: 4em;
+  margin: 0 auto;
+  /* flex-basis: calc(100%/3);  */
+  gap: 2.5em;
+  flex-flow: wrap;
+  text-align: center;
+  justify-content: center;
+  flex-basis: 100%;
+  margin-bottom: 100px;
+}
+
+.servico1 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  flex-basis: calc(100% / 3);
+  max-width: 20%;
+  min-width: 30%;
+}
+
+.servico1 h3 {
+  margin-bottom: 1em;
+}
+
+.decoracao {
+  width: 250px;
+  height: 250px;
+}
+
+#festa1 {
+  background-image: url(../image/imag1.jpg);
+  width: 100%;
+}
+
+#festa2 {
+  background-image: url(../image/imag2.jpg);
+}
+#festa3 {
+  background-image: url(../image/imag3.jpg);
+}
+/* *************************************** */
+body {
+  padding-bottom: 0px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.footer {
+  height: 100%;
+  display: flex;
+  gap: 20px;
+  background-color: rgb(231, 111, 131);
+  height: 12.5rem;
+}
+.footer-content {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+}
+.icon-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  font-family: "Varela Round", sans-serif;
+}
+
+.logo-footer {
+  height: 6em;
+  width: 7em;
+  border-radius: 100%;
+}
+.logo-div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 15px;
+}
+.address {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color: #fff;
+}
+.maps {
+  margin-right: 12px;
+}
+
+a {
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+}
